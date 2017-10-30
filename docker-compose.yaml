@@ -16,7 +16,7 @@ services: # configuring each container
   wordpress: # name of our wordpress container
     depends_on: # container dependencies that need to be running first
       - db
-    image: wordpress:latest # image used by our container
+    image: pattonwebz/wordpress-php7-1-apache-memcached # image used by our container
     ports:
       - "8000:80" # setting our ports for networking
     restart: always
